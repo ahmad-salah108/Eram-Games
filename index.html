@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/styles/output.css" rel="stylesheet" />
+    <link href="../src/styles/main.css" rel="stylesheet" />
+    <link href="../src/styles/animations.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <title>ERAM GAMES</title>
+  </head>
+  <body class="bg-black">
+    <!-- Navbar -->
+    <nav class="bg-black/50 w-full px-4 sm:px-6 fixed z-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between md:justify-start">
+          <!-- Logo Section -->
+          <a href="../src/index.html">
+            <div class="flex items-center space-x-2 sm:space-x-3">
+              <!-- Logo Icon -->
+              <img
+                src="../src/assets/images/logo/logo-clean-white.svg"
+                width="130px"
+                class="bg-cover bg-center"
+              />
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <div
+            class="hidden md:flex md:ms-10 items-center space-x-6 lg:space-x-8"
+          >
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              BURIED WITHIN
+            </a>
+            <a
+              href="../src/join.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              CAREERS
+            </a>
+            <a
+              href="../src/contact-us.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              CONTACT
+            </a>
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              MEDIA
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300 transition-colors duration-200"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  id="menu-icon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+                <path
+                  id="close-icon"
+                  class="hidden"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              BURIED WITHIN
+            </a>
+            <a
+              href="../src/join.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              CAREERS
+            </a>
+            <a
+              href="../src/contact-us.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              CONTACT
+            </a>
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              MEDIA
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Carousel Container -->
+    <header
+      id="heroSlider"
+      class="splide"
+      aria-label="Splide Basic HTML Example"
+    >
+      <div class="splide__track">
+        <ul class="splide__list text-white">
+          <div class="splide__slide">
+            <div
+              class="relative h-screen w-full bg-cover bg-center"
+              style="background-image: url('../src/assets/images/main.jpg');"
+            >
+              <div class="relative z-20 h-full w-full bg-black-gradient-rtl">
+                <div
+                  class="max-w-7xl mx-auto px-5 flex flex-col justify-center h-full gap-20 relative"
+                >
+                  <div>
+                    <h1
+                      class="uppercase text-white font-bold text-6xl sm:text-8xl text-shadow-lg text-shadow-black fade-in-bottom"
+                    >
+                      Vision
+                    </h1>
+                  </div>
+                  <div class="lg:w-1/2">
+                    <p
+                      class="text-white text-balance text-2xl leading-relaxed fade-in-bottom-d03 opacity-0"
+                    >
+                      To redefine the way we play
+                    </p>
+                  </div>
+                  <button
+                    class="w-fit uppercase text-[#dbdddf] border-[#6c7072] bg-[#6c7072]/30 border-2 py-2 px-10 font-semibold transition-all cursor-pointer fade-in-bottom-d06 opacity-0"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div
+              class="relative h-screen w-full bg-cover bg-center"
+              style="background-image: url('../src/assets/images/fight.jpg');"
+            >
+              <div class="relative z-20 h-full w-full bg-black-gradient-rtl">
+                <div
+                  class="max-w-7xl mx-auto px-5 flex flex-col justify-center h-full gap-20 relative"
+                >
+                  <div>
+                    <h1
+                      class="uppercase text-white font-bold text-6xl sm:text-8xl text-shadow-lg text-shadow-black fade-in-bottom"
+                    >
+                      Vision
+                    </h1>
+                  </div>
+                  <div class="lg:w-1/2">
+                    <p
+                      class="text-white text-balance text-2xl leading-relaxed fade-in-bottom-d03 opacity-0"
+                    >
+                      To redefine the way we play
+                    </p>
+                  </div>
+                  <button
+                    class="w-fit uppercase text-[#dbdddf] border-[#6c7072] bg-[#6c7072]/30 border-2 py-2 px-10 font-semibold transition-all cursor-pointer fade-in-bottom-d06 opacity-0"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div
+              class="relative h-screen w-full bg-cover bg-center"
+              style="background-image: url('../src/assets/images/internal.jpg');"
+            >
+              <div class="relative z-20 h-full w-full bg-black-gradient-rtl">
+                <div
+                  class="max-w-7xl mx-auto px-5 flex flex-col justify-center h-full gap-20 relative"
+                >
+                  <div>
+                    <h1
+                      class="uppercase text-white font-bold text-6xl sm:text-8xl text-shadow-lg text-shadow-black fade-in-bottom"
+                    >
+                      Vision
+                    </h1>
+                  </div>
+                  <div class="lg:w-1/2">
+                    <p
+                      class="text-white text-balance text-2xl leading-relaxed fade-in-bottom-d03 opacity-0"
+                    >
+                      To redefine the way we play
+                    </p>
+                  </div>
+                  <button
+                    class="w-fit uppercase text-[#dbdddf] border-[#6c7072] bg-[#6c7072]/30 border-2 py-2 px-10 font-semibold transition-all cursor-pointer fade-in-bottom-d06 opacity-0"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <!-- About Us, Our Philosophy, Team Members -->
+    <section class="bg-main text-white">
+      <div
+        class="bg-dark h-full w-full rounded-tl-[200px] sm:rounded-tl-[50vw] md:rounded-tl-[450px] rounded-br-[200px] sm:rounded-br-[50vw] md:rounded-br-[450px] pt-40 pb-20"
+      >
+        <!-- About Us -->
+        <section class="max-w-7xl px-5 mx-auto text-center">
+          <h1
+            class="text-main font-bold text-5xl tracking-wider pb-10 uppercase"
+          >
+            ABOUT US
+          </h1>
+          <p
+            class="sm:max-w-[60%] text-center mx-auto pb-5 text-lg text-balance"
+          >
+            Our studio was established to craft immersive stories and memorable
+            experiences designed to engage players who appreciate deep,
+            character-driven narratives.
+          </p>
+          <p class="sm:max-w-[60%] text-center mx-auto text-lg text-balance">
+            We approach every stage of game development from initial concept to
+            final coding with a shared vision of delivering uniquely crafted
+            gameplay that challenges players' problem-solving skills and
+            encourages them to think differently.
+          </p>
+          <img
+            src="../src/assets/images/logo/logo-textured.png"
+            width="600px"
+            class="mx-auto pt-20"
+          />
+        </section>
+        <!-- Our Philosophy -->
+        <section class="max-w-7xl px-5 mx-auto text-center pt-20">
+          <h1
+            class="text-main font-bold text-5xl tracking-wider pb-10 uppercase"
+          >
+            Our Philosophy
+          </h1>
+          <p
+            class="sm:max-w-[60%] text-center mx-auto pb-5 text-lg text-balance"
+          >
+            At Eram Games, excellence is achieved through precise attention to
+            detail, innovative game mechanics, and the nuanced development of
+            complex characters and stories.
+          </p>
+          <p
+            class="sm:max-w-[60%] text-center mx-auto pb-20 text-lg text-balance"
+          >
+            This commitment ensures every game is not just played but felt
+            deeply and remembered long after the screen fades to black.
+          </p>
+          <a
+          href="../src/buried-within.html"
+            class="uppercase text-main border-main border-2 py-5 px-10 font-semibold hover:bg-main hover:text-white transition-all cursor-pointer"
+          >
+            See what we're up to
+          </a>
+        </section>
+        <!-- Team Members -->
+        <section class="pt-20">
+          <div class="bg-[#515151] py-5">
+            <h1 class="uppercase text-main font-bold text-center text-3xl">
+              A BREIF OF THE TEAM MEMBERS
+            </h1>
+            <section
+              id="teamMembersSlider"
+              class="splide"
+              aria-label="Splide Basic HTML Example"
+            >
+              <div class="splide__arrows">
+                <button
+                  class="splide__arrow splide__arrow--prev"
+                  style="width: 4em; height: 4em; background: transparent"
+                >
+                  <img
+                    src="../src/assets/images/icons/slider-arrow.svg"
+                    width="100px"
+                    alt="arrow"
+                    class="rotate-180"
+                  />
+                </button>
+                <button
+                  class="splide__arrow splide__arrow--next"
+                  style="width: 4em; height: 4em; background: transparent"
+                >
+                  <img
+                    src="../src/assets/images/icons/slider-arrow.svg"
+                    width="100px"
+                    alt="arrow"
+                  />
+                </button>
+              </div>
+              <div class="max-w-7xl px-5 mx-auto">
+                <div class="splide__track py-12">
+                  <ul class="splide__list">
+                    <div class="splide__slide flex justify-center items-center">
+                      <div
+                        class="w-fit flex flex-col justify-center items-center"
+                      >
+                        <img
+                          src="../src/assets/images/skeleton.jpg"
+                          width="100px"
+                          alt="member"
+                          class="object-cover"
+                        />
+                        <p
+                          class="font-semibold text-main pt-1 text-balance text-center"
+                        >
+                          Lead Programmer
+                        </p>
+                        <p class="text-white pt-1 text-balance text-center">
+                          Matthew Fonggrasin
+                        </p>
+                      </div>
+                    </div>
+                    <div class="splide__slide flex justify-center items-center">
+                      <div
+                        class="w-fit flex flex-col justify-center items-center"
+                      >
+                        <img
+                          src="../src/assets/images/skeleton.jpg"
+                          width="100px"
+                          alt="member"
+                          class="object-cover"
+                        />
+                        <p
+                          class="font-semibold text-main pt-1 text-balance text-center"
+                        >
+                          Lead Programmer
+                        </p>
+                        <p class="text-white pt-1 text-balance text-center">
+                          Matthew Fonggrasin
+                        </p>
+                      </div>
+                    </div>
+                    <div class="splide__slide flex justify-center items-center">
+                      <div
+                        class="w-fit flex flex-col justify-center items-center"
+                      >
+                        <img
+                          src="../src/assets/images/skeleton.jpg"
+                          width="100px"
+                          alt="member"
+                          class="object-cover"
+                        />
+                        <p
+                          class="font-semibold text-main pt-1 text-balance text-center"
+                        >
+                          Lead Programmer
+                        </p>
+                        <p class="text-white pt-1 text-balance text-center">
+                          Matthew Fonggrasin
+                        </p>
+                      </div>
+                    </div>
+                    <div class="splide__slide flex justify-center items-center">
+                      <div
+                        class="w-fit flex flex-col justify-center items-center"
+                      >
+                        <img
+                          src="../src/assets/images/skeleton.jpg"
+                          width="100px"
+                          alt="member"
+                          class="object-cover"
+                        />
+                        <p
+                          class="font-semibold text-main pt-1 text-balance text-center"
+                        >
+                          Lead Programmer
+                        </p>
+                        <p class="text-white pt-1 text-balance text-center">
+                          Matthew Fonggrasin
+                        </p>
+                      </div>
+                    </div>
+                    <div class="splide__slide flex justify-center items-center">
+                      <div
+                        class="w-fit flex flex-col justify-center items-center"
+                      >
+                        <img
+                          src="../src/assets/images/skeleton.jpg"
+                          width="100px"
+                          alt="member"
+                          class="object-cover"
+                        />
+                        <p
+                          class="font-semibold text-main pt-1 text-balance text-center"
+                        >
+                          Lead Programmer
+                        </p>
+                        <p class="text-white pt-1 text-balance text-center">
+                          Matthew Fonggrasin
+                        </p>
+                      </div>
+                    </div>
+                    <div class="splide__slide flex justify-center items-center">
+                      <div
+                        class="w-fit flex flex-col justify-center items-center"
+                      >
+                        <img
+                          src="../src/assets/images/skeleton.jpg"
+                          width="100px"
+                          alt="member"
+                          class="object-cover"
+                        />
+                        <p
+                          class="font-semibold text-main pt-1 text-balance text-center"
+                        >
+                          Lead Programmer
+                        </p>
+                        <p class="text-white pt-1 text-balance text-center">
+                          Matthew Fonggrasin
+                        </p>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="max-w-7xl mx-auto px-5 pt-20">
+            <p
+              class="md:max-w-1/2 font-semibold text-4xl text-center leading-snug"
+            >
+              Here at Eram Games, we're not just making games, we're exploring
+              the further possibilities of the medium.
+            </p>
+            <p class="md:max-w-1/2 text-2xl text-center pt-10 ml-auto">
+              As we expand our horizons, we're on the lookout for creative
+              voices who are ready to push boundaries and explore deep,
+              compelling narratives.
+            </p>
+            <p class="md:max-w-1/2 text-2xl text-center pt-10 ml-auto">
+              If you’re eager to meet the challenge, check out the opportunities
+              we've got lined up or if you think you’re right for something down
+              the line, submit a general application. We still have a lot to
+              explore together.
+            </p>
+            <div class="w-full flex justify-center pt-30">
+              <a
+              href="../src/join.html"
+                class="mx-auto w-fit text-3xl uppercase text-main border-main border-2 py-4 px-17 font-semibold hover:bg-main hover:text-white transition-all cursor-pointer"
+              >
+                Join US
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t-2 border-main text-white">
+      <div class="max-w-7xl mx-auto text-center px-5 pt-3">
+        <img
+          src="../src/assets/images/logo/logo-clean-white.svg"
+          alt="Logo"
+          width="300px"
+        />
+        <div class="flex pb-15 justify-between flex-col lg:flex-row gap-10">
+          <div class="flex flex-col justify-end">
+            <div class="flex gap-7 lg:pl-[28px]">
+              <img
+                src="../src/assets/images/icons/facebook.svg"
+                alt="facebook"
+                width="20px"
+              />
+              <img
+                src="../src/assets/images/icons/instagram.svg"
+                alt="instagram"
+                width="20px"
+              />
+              <img
+                src="../src/assets/images/icons/linkedin.svg"
+                alt="linkedin"
+                width="25px"
+              />
+              <img src="../src/assets/images/icons/x.png" alt="x" width="20px" />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center gap-5 w-fit">
+            <p class="text-xl font-bold tracking-wider text-start">Location</p>
+            <p class="uppercase">5251 N Central AVE., Chicago, il 60630</p>
+          </div>
+          <div class="flex flex-col justify-center gap-5 w-fit">
+            <p class="text-xl font-bold tracking-wider text-start">Contact</p>
+            <p class="uppercase">eram@eramgames.com</p>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="border-t-[1px] border-[#333] text-[#999] py-7">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="flex justify-between flex-col sm:flex-row gap-5">
+            <div>
+              <p>Copyright &copy; Eram Games LLC 2025</p>
+            </div>
+            <div class="flex gap-10 flex-wrap">
+              <p>Trams & Condition</p>
+              <p>Privacy Policy</p>
+              <a href="../src/contact-us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initiating Splide Carousel
+      new Splide("#heroSlider", {
+        type: "loop",
+        autoplay: true,
+        arrows: false,
+      }).mount();
+
+      new Splide("#teamMembersSlider", {
+        type: "loop",
+        autoplay: true,
+        perPage: 3,
+        breakpoints: {
+          768: {
+            perPage: 1,
+          },
+        },
+      }).mount();
+
+      // Mobile menu toggle functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+      // Close mobile menu when window is resized to desktop size
+      window.addEventListener("resize", function () {
+        if (window.innerWidth >= 768) {
+          // md breakpoint
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>

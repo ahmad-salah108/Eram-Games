@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buried Within</title>
+    <link href="../src/styles/output.css" rel="stylesheet" />
+    <link href="../src/styles/main.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-black/50 w-full px-4 sm:px-6 fixed z-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between md:justify-start">
+          <!-- Logo Section -->
+          <a href="../src/index.html">
+            <div class="flex items-center space-x-2 sm:space-x-3">
+              <!-- Logo Icon -->
+              <img
+                src="../src/assets/images/logo/logo-clean-white.svg"
+                width="130px"
+                class="bg-cover bg-center"
+              />
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <div
+            class="hidden md:flex md:ms-10 items-center space-x-6 lg:space-x-8"
+          >
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              BURIED WITHIN
+            </a>
+            <a
+              href="../src/join.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              CAREERS
+            </a>
+            <a
+              href="../src/contact-us.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              CONTACT
+            </a>
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              MEDIA
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300 transition-colors duration-200"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  id="menu-icon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+                <path
+                  id="close-icon"
+                  class="hidden"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              BURIED WITHIN
+            </a>
+            <a
+              href="../src/join.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              CAREERS
+            </a>
+            <a
+              href="../src/contact-us.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              CONTACT
+            </a>
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              MEDIA
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+      <div class="w-full h-screen bg-black-gradient-hero">
+        <video
+          src="../src/assets/videos/concept-video.mp4"
+          autoplay
+          muted
+          loop
+          class="fixed top-0 left-0 -z-20 h-screen w-screen object-cover"
+        ></video>
+        <div
+          class="w-full h-screen flex flex-col justify-center items-center gap-20"
+        >
+          <img
+            src="../src/assets/images/logo/logo-buried.png"
+            alt="Buried Within"
+            class="mt-50 w-[80%] md:w-1/2"
+          />
+          <div
+            class="bg-cover bg-center"
+            style="
+              background-image: url('../src/assets/images/brush-stroke-banner.svg');
+            "
+          >
+            <button
+              class="uppercase text-white py-5 px-10 font-semibold transition-all cursor-pointer tracking-wider"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- INTERNAL OBLIVION Section -->
+    <section
+      class="bg-cover bg-center relative"
+      style="background-image: url('../src/assets/images/internal.jpg')"
+    >
+      <div
+        class="backdrop-blur-md flex justify-end absolute top-0 left-0 h-full w-full"
+        style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%)"
+      ></div>
+      <div class="relative z-20 pt-30 pb-20 bg-black-gradient">
+        <div
+          class="md:ml-auto md:w-1/2 flex flex-col justify-center items-center"
+        >
+          <h1
+            class="text-main text-center font-bold text-5xl tracking-wide pb-10 uppercase px-3"
+          >
+            AN INTERNAL OBLIVION
+          </h1>
+          <div
+            class="max-w-[500px] flex justify-center items-center flex-col px-3"
+          >
+            <p
+              class="text-center pb-5 text-lg text-white text-balance uppercase font-semibold"
+            >
+              Embark on a haunting journey through the shadowed sprawls of
+              Harron's mind, a realm intricately woven from the fabric of
+              illusions and forgotten memories.
+            </p>
+            <p
+              class="text-center pb-5 text-sm text-white text-balance uppercase"
+            >
+              Here, dreams intertwine with reality, and phantoms whisper secrets
+              of a past that Harron struggles to piece together. In his quest to
+              regain his lost strength and escape the mental prison he’s
+              ensnared in, Harron must navigate a labyrinth of memories—each
+              manifesting as vivid levels, formidable enemies, and haunting
+              encounters.
+            </p>
+            <p class="text-center text-sm text-white text-balance uppercase">
+              As you delve deeper, confront the essence of despair, hate,
+              regret, and fear—emotions that form the core challenges of
+              Harron's ordeal. These aren't just personal demons; they are
+              universal, ancient entities that resonate with us all, shaping the
+              game's narrative into a reflection of our collective psyche.
+              Venture forth and unravel the mysteries that lie beyond the veil
+              of forgetfulness, and discover if Harron can rebuild himself and
+              find solace within the tumultuous echoes of his actions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A FIGHT TO REMEMBER Section -->
+    <section
+      class="bg-cover bg-center"
+      style="background-image: url('../src/assets/images/fight.jpg')"
+    >
+      <div class="relative z-20 pt-30 pb-40 bg-black-gradient">
+        <div
+          class="mx-auto md:w-1/2 flex flex-col justify-center items-center pb-10"
+        >
+          <h1
+            class="text-main text-center font-bold text-5xl tracking-wide pb-10 uppercase"
+          >
+            A FIGHT TO REMEMBER
+          </h1>
+        </div>
+        <div class="max-w-7xl px-5 mx-auto text-center">
+          <div class="max-w-[500px] flex justify-center items-center flex-col">
+            <p
+              class="text-center pb-10 text-4xl text-white text-balance font-semibold"
+            >
+              Once a relentless and ambitious monarch, Harron has been left
+              weakened.
+            </p>
+            <p class="text-center pb-5 text-lg text-white text-balance">
+              Now, as faces from his past overpower him with his own forgotten
+              strengths, Harron must fight to regain what he lost, using
+              whatever cunning he can recall.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combat & Plan Section -->
+    <section class="bg-dark py-20 w-full">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center gap-10 pb-20"
+      >
+        <div class="mx-auto px-3">
+          <h1
+            class="text-main text-center font-bold text-3xl tracking-wide pb-10"
+          >
+            Combat Your Inner Demons
+          </h1>
+          <div class="max-w-[500px] flex justify-center items-center flex-col">
+            <p
+              class="text-center pb-5 text-lg text-white text-balance font-semibold"
+            >
+              Within the twisted corridors of Harron's mind, every enemy stands
+              as a dark reflection of his own fears and failures.
+            </p>
+            <p class="text-center pb-5 text-md text-white text-balance">
+              These adversaries are no mere obstacles; they are puzzles crafted
+              from Harron's subconscious, each manifested to challenge his
+              strategies and exploit his weaknesses.
+            </p>
+            <p class="text-center text-md text-white text-balance">
+              The most relentless foes emerge from his fractured past, requiring
+              more than hacking and slashing to overcome. As you face these
+              spectral enemies, remember: every encounter is a riddle, and
+              solving it brings Harron one step closer to reclaiming his lost
+              memories.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-cover bg-center w-full lg:w-1/2 h-[450px]"
+          style="
+            clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 13% 100%, 0% 50%);
+            background-image: url('../src/assets/images/crow.jpg');
+          "
+        ></div>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row-reverse justify-between items-center gap-10"
+      >
+        <div class="mx-auto px-3">
+          <h1
+            class="text-main text-center font-bold text-3xl tracking-wide pb-10"
+          >
+            Combat Your Inner Demons
+          </h1>
+          <div class="max-w-[500px] flex justify-center items-center flex-col">
+            <p
+              class="text-center pb-5 text-lg text-white text-balance font-semibold"
+            >
+              Within the twisted corridors of Harron's mind, every enemy stands
+              as a dark reflection of his own fears and failures.
+            </p>
+            <p class="text-center pb-5 text-md text-white text-balance">
+              These adversaries are no mere obstacles; they are puzzles crafted
+              from Harron's subconscious, each manifested to challenge his
+              strategies and exploit his weaknesses.
+            </p>
+            <p class="text-center text-md text-white text-balance">
+              The most relentless foes emerge from his fractured past, requiring
+              more than hacking and slashing to overcome. As you face these
+              spectral enemies, remember: every encounter is a riddle, and
+              solving it brings Harron one step closer to reclaiming his lost
+              memories.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-cover bg-center w-full lg:w-1/2 h-[450px]"
+          style="
+            clip-path: polygon(0% 0%, 87% 0, 100% 50%, 87% 100%, 0% 100%);
+            background-image: url('../src/assets/images/crow-fight.jpg');
+          "
+        ></div>
+      </div>
+    </section>
+
+    <!-- WALK Section -->
+    <section
+      class="bg-cover bg-top xl:bg-[-200px_-70px] relative"
+      style="background-image: url('../src/assets/images/skeleton.jpg');"
+    >
+      <div class="relative z-20 pt-30 pb-50 bg-black-gradient-secondary">
+        <div
+          class="md:ml-auto md:w-1/2 flex flex-col justify-center items-center px-3"
+        >
+          <h1
+            class="text-main text-center font-bold text-5xl tracking-wide pb-10 text-pretty"
+          >
+            Walk the Perilous Paths of the Mind
+          </h1>
+          <div class="max-w-[500px] flex justify-center items-center flex-col">
+            <p
+              class="text-center pb-5 text-lg text-white text-pretty font-semibold"
+            >
+              Navigate Harron's treacherous psyche, where each memory is a
+              vividly designed environment reflecting parts of his life story.
+            </p>
+            <p class="text-center pb-5 text-md text-white text-pretty">
+              From serene fields to storm-wracked ruins, these environments are
+              more than mere backdrops; they are the paths Harron must tread to
+              forge his escape. Each setting not only diversifies gameplay but
+              also deepens your understanding of the challenges he faces.
+            </p>
+            <p class="text-center text-md text-white text-pretty">
+              Discover how navigating these fragmented biomes—each with its own
+              challenges and secrets—becomes a crucial part of his quest,
+              illustrating the dangerous and haunted journey Harron must
+              undertake to piece together his past and find a way out.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN US! -->
+    <section
+      class="bg-cover bg-center relative"
+      style="background-image: url('../src/assets/images/harron.jpg');"
+    >
+      <div class="relative z-20 pt-130 pb-20 bg-black-gradient-third">
+        <div class="w-full flex justify-center">
+          <a href="../src/join.html">
+            <button
+              class="mx-auto w-fit text-3xl uppercase text-main border-main border-2 py-4 px-17 font-semibold hover:bg-main hover:text-white transition-all cursor-pointer"
+            >
+              Join US
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t-2 border-main text-white">
+      <div class="max-w-7xl mx-auto text-center px-5 pt-3">
+        <img
+          src="../src/assets/images/logo/logo-clean-white.svg"
+          alt="Logo"
+          width="300px"
+        />
+        <div class="flex pb-15 justify-between flex-col lg:flex-row gap-10">
+          <div class="flex flex-col justify-end">
+            <div class="flex gap-7 lg:pl-[28px]">
+              <img
+                src="../src/assets/images/icons/facebook.svg"
+                alt="facebook"
+                width="20px"
+              />
+              <img
+                src="../src/assets/images/icons/instagram.svg"
+                alt="instagram"
+                width="20px"
+              />
+              <img
+                src="../src/assets/images/icons/linkedin.svg"
+                alt="linkedin"
+                width="25px"
+              />
+              <img
+                src="../src/assets/images/icons/x.png"
+                alt="x"
+                width="20px"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center gap-5 w-fit">
+            <p class="text-xl font-bold tracking-wider text-start">Location</p>
+            <p class="uppercase">5251 N Central AVE., Chicago, il 60630</p>
+          </div>
+          <div class="flex flex-col justify-center gap-5 w-fit">
+            <p class="text-xl font-bold tracking-wider text-start">Contact</p>
+            <p class="uppercase">eram@eramgames.com</p>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="border-t-[1px] border-[#333] text-[#999] py-7">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="flex justify-between flex-col sm:flex-row gap-5">
+            <div>
+              <p>Copyright &copy; Eram Games LLC 2025</p>
+            </div>
+            <div class="flex gap-10 flex-wrap">
+              <p>Trams & Condition</p>
+              <p>Privacy Policy</p>
+              <a href="../src/contact-us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+      // Close mobile menu when window is resized to desktop size
+      window.addEventListener("resize", function () {
+        if (window.innerWidth >= 768) {
+          // md breakpoint
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>

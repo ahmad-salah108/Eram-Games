@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join The Team</title>
+    <link href="../src/styles/output.css" rel="stylesheet" />
+    <link href="../src/styles/main.css" rel="stylesheet" />
+    <link href="../src/styles/animations.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <!-- Navbar -->
+    <nav class="bg-black/50 w-full px-4 sm:px-6 fixed z-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between md:justify-start">
+          <!-- Logo Section -->
+          <a href="../src/index.html">
+            <div class="flex items-center space-x-2 sm:space-x-3">
+              <!-- Logo Icon -->
+              <img
+                src="../src/assets/images/logo/logo-clean-white.svg"
+                width="130px"
+                class="bg-cover bg-center"
+              />
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <div
+            class="hidden md:flex md:ms-10 items-center space-x-6 lg:space-x-8"
+          >
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              BURIED WITHIN
+            </a>
+            <a
+              href="../src/join.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              CAREERS
+            </a>
+            <a
+              href="../src/contact-us.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              CONTACT
+            </a>
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              MEDIA
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300 transition-colors duration-200"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  id="menu-icon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+                <path
+                  id="close-icon"
+                  class="hidden"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              BURIED WITHIN
+            </a>
+            <a
+              href="../src/join.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              CAREERS
+            </a>
+            <a
+              href="../src/contact-us.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider border-b border-gray-700 pb-2"
+            >
+              CONTACT
+            </a>
+            <a
+              href="../src/buried-within.html"
+              class="text-white hover:text-gray-300 transition-colors duration-200 text-sm font-medium tracking-wider"
+            >
+              MEDIA
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+      <div
+        class="bg-cover bg-center h-screen w-full overflow-hidden"
+        style="background-image: url('../src/assets/images/face.jpg');"
+      >
+        <div
+          class="max-w-7xl mx-auto px-5 flex flex-col justify-center h-full gap-10 relative"
+        >
+          <div class="mx-auto lg:mx-0 lg:self-end lg:w-1/2">
+            <h1
+              class="uppercase text-main font-bold text-9xl text-center lg:text-start fade-in-left overflow-hidden"
+            >
+              Join
+            </h1>
+            <h1
+              class="uppercase text-main font-semibold text-7xl text-center lg:text-start lg:pl-30 fade-in-right overflow-hidden"
+            >
+              The Team
+            </h1>
+          </div>
+          <div class="lg:w-1/2">
+            <p
+              class="text-white text-balance text-xl text-center leading-relaxed fade-in-bottom-d03 opacity-0 overflow-hidden"
+            >
+              We’re always on the lookout for top talent for future
+              opportunities. If you’re interested in working with us, please
+              email us at jobs@eramgames.com or via Contact form
+            </p>
+          </div>
+          <a
+            href="#current"
+            class="rounded-full border-2 border-main w-[50px] cursor-pointer absolute bottom-10 left-1/2 -translate-x-1/2 fade-in-top-d06 opacity-0"
+          >
+            <img
+              src="../src/assets/images/icons/arrow-down.svg"
+              alt="arrow"
+              width="50px"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Current Openings Section -->
+    <section id="current" class="border-t-2 border-main">
+      <div
+        class="bg-cover bg-center w-full"
+        style="background-image: url('../src/assets/images/arena.jpg');"
+      >
+        <div class="relative z-20 overlay pt-20 pb-30">
+          <div class="max-w-7xl mx-auto px-5 h-full relative">
+            <h1
+              class="text-main text-2xl text-center font-bold uppercase tracking-wide"
+            >
+              Current Openings
+            </h1>
+            <h1
+              class="text-white text-2xl text-center font-bold uppercase tracking-wide pt-10"
+            >
+              Project: Buried Within
+            </h1>
+            <div class="flex flex-wrap justify-between gap-5 pt-20">
+              <div
+                class="uppercase text-main border-main border-2 py-5 w-[180px] text-center font-semibold mx-auto"
+              >
+                Art: 0
+              </div>
+              <div
+                class="uppercase text-main border-main border-2 py-5 w-[180px] text-center font-semibold mx-auto"
+              >
+                programming: 0
+              </div>
+              <div
+                class="uppercase text-main border-main border-2 py-5 w-[180px] text-center font-semibold mx-auto"
+              >
+                design: 0
+              </div>
+              <div
+                class="uppercase text-main border-main border-2 py-5 w-[180px] text-center font-semibold mx-auto"
+              >
+                hr: 0
+              </div>
+              <div
+                class="uppercase text-main border-main border-2 py-5 w-[180px] text-center font-semibold mx-auto"
+              >
+                production: 0
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK WITH US -->
+    <section>
+      <div class="h-20 bg-main flex items-center justify-center">
+        <h1 class="uppercase text-white text-4xl font-bold text-center">
+          Work with us
+        </h1>
+      </div>
+      <div
+        class="bg-cover bg-no-repeat bg-center min-h-screen w-full relative z-20 overlay"
+        style="background-image: url('../src/assets/images/logo/rune.png');"
+      >
+        <div class="max-w-7xl mx-auto px-5 pt-20 pb-40">
+          <div class="flex flex-col md:flex-row gap-20 justify-around">
+            <form style="flex-grow: 2">
+              <div
+                class="text-main flex flex-col gap-5 tracking-wide justify-center items-center"
+              >
+                <p class="text-2xl font-bold self-start">
+                  Name <span class="text-sm font-normal">(Required)</span>
+                </p>
+                <div class="flex flex-col md:flex-row gap-5 w-full">
+                  <div class="flex flex-col gap-3 w-full">
+                    <label for="firstName" class="font-bold">First Name</label>
+                    <input
+                      id="firstName"
+                      name="firstName"
+                      type="text"
+                      class="bg-white text-black outline-0 border-2 border-main px-2 py-1"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3 w-full">
+                    <label for="lastName" class="font-bold">Last Name</label>
+                    <input
+                      id="lastName"
+                      name="lastName"
+                      type="text"
+                      class="bg-white text-black outline-0 border-2 border-main px-2 py-1"
+                    />
+                  </div>
+                </div>
+                <div class="w-full">
+                  <div class="flex flex-col gap-3 w-full">
+                    <label for="email" class="font-bold"
+                      >Email Address
+                      <span class="text-sm font-normal">(Required)</span></label
+                    >
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="bg-white text-black outline-0 border-2 border-main px-2 py-1"
+                    />
+                  </div>
+                  <div class="flex gap-1 pt-2">
+                    <input
+                      type="checkbox"
+                      name="news"
+                      id="news"
+                      class="accent-main"
+                    />
+                    <label for="news" class="text-xs"
+                      >Sign up for news and updates.</label
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 w-full">
+                  <label for="role" class="font-bold"
+                    >Role
+                    <span class="text-sm font-normal">(Required)</span></label
+                  >
+                  <select
+                    name="role"
+                    id="role"
+                    class="bg-white text-black outline-0 border-2 border-main px-2 py-1"
+                  >
+                    <option value="Role 1">Role 1</option>
+                    <option value="Role 2">Role 2</option>
+                    <option value="Role 3">Role 3</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-3 w-full">
+                  <label for="subject" class="font-bold"
+                    >Subject
+                    <span class="text-sm font-normal">(Required)</span></label
+                  >
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    class="bg-white text-black outline-0 border-2 border-main px-2 py-1"
+                  />
+                </div>
+                <div class="flex flex-col gap-3 w-full">
+                  <label for="message" class="font-bold"
+                    >Message
+                    <span class="text-sm font-normal">(Required)</span></label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="bg-white text-black outline-0 border-2 border-main px-2 py-1"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="flex flex-col gap-3 w-full">
+                  <label for="resume" class="font-bold w-fit">Resume</label>
+                  <label for="resume" class="w-fit">
+                    <div
+                      class="w-[150px] h-[100px] border-2 border-dotted border-main flex flex-col justify-center items-center gap-1 pb-2 cursor-pointer"
+                    >
+                      <span class="text-5xl font-extralight">+</span>
+                      <p id="addFile" class="text-main">Add File</p>
+                    </div>
+                  </label>
+                  <p id="resumeName"></p>
+                  <input id="resume" name="resume" type="file" class="hidden" />
+                </div>
+                <button
+                  type="submit"
+                  class="self-start uppercase border-main border-2 py-3 px-10 rounded-2xl font-semibold bg-main text-white transition-all cursor-pointer"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div class="hidden md:flex justify-center items-center grow">
+              <img
+                src="../src/assets/images/sigil.png"
+                alt="sigil"
+                width="400px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t-2 border-main text-white">
+      <div class="max-w-7xl mx-auto text-center px-5 pt-3">
+        <img
+          src="../src/assets/images/logo/logo-clean-white.svg"
+          alt="Logo"
+          width="300px"
+        />
+        <div class="flex pb-15 justify-between flex-col lg:flex-row gap-10">
+          <div class="flex flex-col justify-end">
+            <div class="flex gap-7 lg:pl-[28px]">
+              <img
+                src="../src/assets/images/icons/facebook.svg"
+                alt="facebook"
+                width="20px"
+              />
+              <img
+                src="../src/assets/images/icons/instagram.svg"
+                alt="instagram"
+                width="20px"
+              />
+              <img
+                src="../src/assets/images/icons/linkedin.svg"
+                alt="linkedin"
+                width="25px"
+              />
+              <img src="../src/assets/images/icons/x.png" alt="x" width="20px" />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center gap-5 w-fit">
+            <p class="text-xl font-bold tracking-wider text-start">Location</p>
+            <p class="uppercase">5251 N Central AVE., Chicago, il 60630</p>
+          </div>
+          <div class="flex flex-col justify-center gap-5 w-fit">
+            <p class="text-xl font-bold tracking-wider text-start">Contact</p>
+            <p class="uppercase">eram@eramgames.com</p>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="border-t-[1px] border-[#333] text-[#999] py-7">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="flex justify-between flex-col sm:flex-row gap-5">
+            <div>
+              <p>Copyright &copy; Eram Games LLC 2025</p>
+            </div>
+            <div class="flex gap-10 flex-wrap">
+              <p>Trams & Condition</p>
+              <p>Privacy Policy</p>
+              <a href="../src/contact-us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Show resume name after selecting
+      const input = document.getElementById("resume");
+      const output = document.getElementById("resumeName");
+      const addFile = document.getElementById("addFile");
+
+      input.addEventListener("change", function () {
+        if (this.files.length > 0) {
+          const file = this.files[0];
+          output.textContent = file.name; // Shows filename with extension
+          addFile.textContent = "Replace File";
+        } else {
+          input.value = "";
+          output.textContent = "";
+          addFile.textContent = "Add File";
+        }
+      });
+
+      // Mobile menu toggle functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+      // Close mobile menu when window is resized to desktop size
+      window.addEventListener("resize", function () {
+        if (window.innerWidth >= 768) {
+          // md breakpoint
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
